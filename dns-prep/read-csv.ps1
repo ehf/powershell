@@ -1,3 +1,7 @@
+
+# read-csv.ps1 > .\Documents\dns-prep-1-out.csv 
+# Get-Content .\Documents\dns-prep-1-out.csv
+
 Import-Csv .\Documents\dns-prep-1.csv | ForEach-Object {
     if ( ( $($_.IPAddress).Trim() -as [IPAddress] -as [Bool] ) -And ( $($_.HostName).Trim() -match "^\w+" )  ) {
     

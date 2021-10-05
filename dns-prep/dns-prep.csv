@@ -1,0 +1,6 @@
+HostName,IPAddress,Domain_new
+host-1,10.10.10.10,a.example.com
+host-2,10.10.10.11,a.example.com
+host-3,10.10.10.12,b.example.com
+host-4,10.10.10.13,c.example.com
+host-5,10.10.10.14,c.example.com

@@ -15,6 +15,6 @@ Import-Csv .\Documents\dns-prep-1.csv | ForEach-Object {
         }
         
         # output newly formatting line
-        Write-Host "$str_ip,$left_name.$str_domain"
+        Write-Output "$str_ip,$left_name.$str_domain"
     }
 }

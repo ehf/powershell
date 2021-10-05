@@ -1,5 +1,5 @@
 Import-Csv .\Documents\nwn-network-inventory-dns-prep-1.csv | ForEach-Object {
-    if  ( $($_.IPAddress) -match "^\d+") {
+    if  ( $($_.IPAddress) -match "^\d+" ) {
         $str_pos = $($_.HostName).IndexOf('.')
         if ( $str_pos -eq -1 ) {
             $left_name = $($_.HostName).Trim().ToLower()

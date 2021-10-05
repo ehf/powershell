@@ -1,4 +1,4 @@
-Import-Csv .\Documents\nwn-network-inventory-dns-prep-1.csv | ForEach-Object {
+Import-Csv .\Documents\dns-prep-1.csv | ForEach-Object {
     if ( ( $($_.IPAddress).Trim() -as [IPAddress] -as [Bool] ) -And ( $($_.HostName).Trim() -match "^\w+" )  ) {
     
         # trim whitespace and set to lower case

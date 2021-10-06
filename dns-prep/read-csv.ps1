@@ -1,8 +1,10 @@
 
-# read-csv.ps1 > .\Documents\dns-prep-1-out.csv 
+# read-csv.ps1 .\Documents\dns-prep-1.csv > .\Documents\dns-prep-1-out.csv 
 # Get-Content .\Documents\dns-prep-1-out.csv
 
-Import-Csv .\Documents\dns-prep-1.csv | ForEach-Object {
+param($file_to_read)
+
+Import-Csv $file_to_read | ForEach-Object {
     if ( ( $($_.IPAddress).Trim() -as [IPAddress] -as [Bool] ) -And ( $($_.HostName).Trim() -match "^\w+" )  ) {
     
         # trim whitespace and set to lower case

@@ -2,7 +2,10 @@
 # read-csv.ps1 .\Documents\dns-prep-1.csv > .\Documents\dns-prep-1-out.csv 
 # Get-Content .\Documents\dns-prep-1-out.csv
 
-param($file_to_read)
+param(
+    [Parameter(Mandatory)]
+    $file_to_read
+)
 
 Import-Csv $file_to_read | ForEach-Object {
     if ( ( $($_.IPAddress).Trim() -as [IPAddress] -as [Bool] ) -And ( $($_.HostName).Trim() -match "^\w+" )  ) {

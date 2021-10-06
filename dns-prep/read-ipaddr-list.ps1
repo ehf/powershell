@@ -1,4 +1,8 @@
 
+# read-ipaddr-list.ps1 .\Documents\ip-address-list.csv > .\Documents\ip-address-list.split-cidr16.sort.unique.out.txt 
+# Get-Content .\Documents\ip-address-list.split-cidr16.sort.unique.out.txt 
+
+
 param(
     [Parameter(Mandatory)]
     $file_to_read

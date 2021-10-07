@@ -4,6 +4,20 @@
 # Get-Content inventory-all-ipaddr.dns-prep.out.txt
 
 
+# read csv file in following format
+# 
+# IPAddress
+# 10.10.10.10
+# 10.10.10.11
+# 10.10.10.12
+# 10.20.20.20
+# 10.20.20.21
+# 10.20.20.22
+# 10.30.30.30
+# 10.30.31.31
+# 10.30.31.32
+# 
+
 param(
     [Parameter(Mandatory)] $file_to_read
 )

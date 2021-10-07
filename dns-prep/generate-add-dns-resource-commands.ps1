@@ -1,6 +1,6 @@
 
 # EHF 10/6/2021 
-# generate-dns-resource-command.ps1 .\Documents\csv-out\dns-prep-file.ipaddr-and-hostname.out.csv > dns-prep-file.add-dns-resource-commands.out.txt
+# generate-add-dns-resource-command.ps1 .\Documents\csv-out\dns-prep-file.ipaddr-and-hostname.out.csv > dns-prep-file.add-dns-resource-commands.out.txt
 # Get-Content dns-prep-file.add-dns-resource-commands.out.txt
 
 # read csv output file 

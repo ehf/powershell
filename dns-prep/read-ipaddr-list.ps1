@@ -21,3 +21,6 @@ $octet_result = Import-Csv $file_to_read | ForEach-Object {
 }
 
 Write-Output $octet_result | Sort-Object -Unique 
+
+
+

@@ -1,9 +1,7 @@
 
-param(
-    [Parameter(Mandatory)]
-    $file_to_read
-)
-
+# EHF 10/6/2021 
+# generate-dns-resource-command.ps1 .\Documents\csv-out\dns-prep-file.ipaddr-and-hostname.out.csv > dns-prep-file.add-dns-resource-commands.out.txt
+# Get-Content dns-prep-file.add-dns-resource-commands.out.txt
 
 # read csv output file 
 # csv fields and format: 
@@ -15,6 +13,12 @@ param(
 # 10.30.30.30,host-4.b.example.com
 #
 #
+
+
+param(
+    [Parameter(Mandatory)]
+    $file_to_read
+)
 
 Import-Csv $file_to_read | ForEach-Object {
         if ( ( $($_.IPAddress).Trim() -as [IPAddress] -as [Bool] ) -And 

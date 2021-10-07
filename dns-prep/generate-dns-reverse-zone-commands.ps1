@@ -5,17 +5,18 @@
 
 
 # read csv file in following format
-# 
-# IPAddress
-# 10.10.10.10
-# 10.10.10.11
-# 10.10.10.12
-# 10.20.20.20
-# 10.20.20.21
-# 10.20.20.22
-# 10.30.30.30
-# 10.30.31.31
-# 10.30.31.32
+# (script only goes through IPAddress column) 
+#
+# IPAddress,HostName
+# 10.10.10.10,host-1.example.com
+# 10.10.10.11,host-2.example.com
+# 10.10.10.12,host-3.example.com
+# 10.20.20.20,host-4.a.example.com
+# 10.20.20.21,host-5.a.example.com
+# 10.20.20.22,host-6.a.example.com
+# 10.30.30.30,host-7.b.example.com
+# 10.30.31.31,host-8.c.example.com
+# 10.30.31.32,host-9.c.example.com
 # 
 
 param(

@@ -32,7 +32,7 @@ $octet_result = Import-Csv $file_to_read | ForEach-Object {
         # if commands will be run from DNS server host
         Write-Output "Add-DnsServerPrimaryZone -NetworkId ""$net_id"" -ReplicationScope Domain"
 
-        # if commands will be run from remote hosts (not local on DNS server host)
+        # if commands will be run from remote hosts (not local on DNS server host) specify '-ComputerName <domain-controller>'
         ##Write-Output "Add-DnsServerPrimaryZone -ComputerName dc01 -NetworkId ""$net_id"" -ReplicationScope Domain"
     }
 }

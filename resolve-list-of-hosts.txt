@@ -1,0 +1,1 @@
+foreach ($server in (Get-Content .\Documents\L_hostnames.txt)) { Resolve-DnsName -Name $server | Select-Object IPAddress,Name }

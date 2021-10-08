@@ -1,1 +1,3 @@
 foreach ($server in (Get-Content .\Documents\L_hostnames.txt)) { Resolve-DnsName -Name $server | Select-Object IPAddress,Name }
+
+# foreach ($server in (Get-Content .\Documents\L_hostnames.csv)) { Resolve-DnsName -Name $server | Select-Object IPAddress,Name | Export-Csv -Path c:\Users\241\Documents\L_dns_lookup.csv -Append }

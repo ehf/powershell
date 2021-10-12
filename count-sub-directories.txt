@@ -1,0 +1,5 @@
+> (Get-ChildItem -Path \\srv\share\Groups | Where-Object { ($_.PSIsContainer) }).Count
+93
+> (Get-ChildItem -Path \\srv\share\Projects | Where-Object { ($_.PSIsContainer) }).Count
+490
+>

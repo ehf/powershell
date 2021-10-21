@@ -1,6 +1,6 @@
 
 # EHF 10/6/2021
-# read-ipaddr-list.ps1 .\Documents\ip-address-list.csv > .\Documents\ip-address-list.split.sort.unique.out.txt 3
+# read-ipaddr-list.ps1 .\Documents\ip-address-list.csv 3 > .\Documents\ip-address-list.split.sort.unique.out.txt 
 # Get-Content .\Documents\ip-address-list.split.sort.unique.out.txt 
 
 param(

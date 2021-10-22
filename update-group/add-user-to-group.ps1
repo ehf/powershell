@@ -18,7 +18,7 @@ param(
 
 
 $work_path="C:\Temp\update-security-group"
-$transcript_log="$work_path/update-security-group.log"
+$transcript_log="$work_path\update-security-group.log"
 
 # create work directory, if not present
 If( !(Test-Path $work_path) ) {

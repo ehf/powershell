@@ -6,4 +6,4 @@ host-4,10.10.10.13,c.example.com
 host-5,10.10.10.14,c.example.com
 host-6,10.20.10.10,d.example.com
 host-7,10.21.10.12,e.example.com
-host-8.10.32.10.15,f.example.com
+host-8,10.32.10.15,f.example.com

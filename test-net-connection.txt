@@ -1,0 +1,12 @@
+
+PS > $ports=80,443
+PS > $ports | ForEach-Object {$port = $_; if (Test-NetConnection 1.1.1.1 -Port $port -InformationLevel Quiet -WarningAction SilentlyContinue) {"Port $port is open"} else {"Port $port is closed"}}
+Port 80 is closed
+Port 443 is closed
+PS > $ports | ForEach-Object {$port = $_; if (Test-NetConnection 2.2.2.2 -Port $port -InformationLevel Quiet -WarningAction SilentlyContinue) {"Port $port is open"} else {"Port $port is closed"}}
+Port 80 is closed
+Port 443 is open
+PS > $ports | ForEach-Object {$port = $_; if (Test-NetConnection 3.3.3.3 -Port $port -InformationLevel Quiet -WarningAction SilentlyContinue) {"Port $port is open"} else {"Port $port is closed"}}
+Port 80 is closed
+Port 443 is closed
+PS >
